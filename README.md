@@ -13,7 +13,11 @@ python -m venv c:\path\to\myenv
 
 Activate venv
 ```
-source c:\path\to\myenv\bin\activate
+source c:\path\to\myenv\Scripts\activate
+```
+Note: In windows on Visual Studio Code, you may need to allow powershell to run scripts by opening powershell as an administrator and running the following command and typing A (Yes to All)
+```
+set-executionpolicy remotesigned
 ```
 
 Install requirements
