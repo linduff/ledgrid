@@ -8,7 +8,12 @@
 <style>
 </style>
 <body>
-    <p id="c_input">INFO</p>
+    <div class="grid-container">
+        {% for i in range(20) %}
+        {% for j in range(20) %}
+        <div class="grid-item" id="{{i}}-{{j}}"></div>
+        {% endfor %}
+        {% endfor %}
 
 </body>
 <script type="text/javascript" src="/static/js/board.js"></script>

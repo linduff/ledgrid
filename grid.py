@@ -23,17 +23,17 @@ def on_connect():
 # Up
 @socketio.on('buttonUpDown')
 def handle_up_button_down():
-    emit('newButtonPress', 'Up Button was down clicked', broadcast=True, include_self=False)
+    emit('newButtonPress', 'U', broadcast=True, include_self=False)
     print('Up Button was down clicked')
 
 @socketio.on('buttonUpUp')
 def handle_up_button_up():
-    emit('newButtonPress', 'Up Button was up clicked', broadcast=True, include_self=False)
     print('Up Button was up clicked')
 
 # Down
 @socketio.on('buttonDownDown')
 def handle_down_button_down():
+    emit('newButtonPress', 'D', broadcast=True, include_self=False)
     print('Down Button was down clicked')
 
 @socketio.on('buttonDownUp')
@@ -43,6 +43,7 @@ def handle_down_button_up():
 # Left
 @socketio.on('buttonLeftDown')
 def handle_left_button_down():
+    emit('newButtonPress', 'L', broadcast=True, include_self=False)
     print('Left Button was down clicked')
 
 @socketio.on('buttonLeftUp')
@@ -52,6 +53,7 @@ def handle_left_button_up():
 # Right
 @socketio.on('buttonRightDown')
 def handle_right_button_down():
+    emit('newButtonPress', 'R', broadcast=True, include_self=False)
     print('Right Button was down clicked')
 
 @socketio.on('buttonRightUp')
@@ -61,6 +63,7 @@ def handle_right_button_up():
 # Middle
 @socketio.on('buttonMiddleDown')
 def handle_middle_button_down():
+    emit('newButtonPress', 'M', broadcast=True, include_self=False)
     print('Middle Button was down clicked')
 
 @socketio.on('buttonMiddleUp')
