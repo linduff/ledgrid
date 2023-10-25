@@ -46,4 +46,17 @@ socket.on('newButtonPress', function(data) {
             break;
         
     }
-})
+});
+
+function runLights() {
+    for(row in Range(20)) {
+        for(col in Range(20)) {
+            setTimeout(function() {
+                document.getElementById(row + '-' + col).style.backgroundColor = '#FF0000'
+            }, 500);
+
+        }
+    }
+}
+
+runLights();
