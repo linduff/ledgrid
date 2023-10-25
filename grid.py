@@ -10,11 +10,11 @@ rooms = {}
 
 @app.route("/")
 def board():
-    return render_template('board.html')
-
-@app.route("/controller")
-def controller():
     return render_template('controller.html')
+
+@app.route("/board")
+def controller():
+    return render_template('board.html')
 
 @socketio.on('connection')
 def on_connect():
